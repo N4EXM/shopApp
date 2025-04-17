@@ -1,10 +1,11 @@
 import React from 'react'
 import heroImg from '../assets/heroImg.png'
 import CategoryCard from '../components/CategoryCard'
+import ProductCard from '../components/ProductCard'
 
 const Home = () => {
   return (
-    <div className='relative flex flex-col items-start justify-start w-screen h-full min-h-screen gap-10 py-28'>
+    <div className='relative flex flex-col items-start justify-start w-screen h-full min-h-screen gap-10 py-24'>
         
       {/* hero section */}
       <section className='px-20 bg-gradient-to-tr from-primary to-secondary'>
@@ -22,7 +23,7 @@ const Home = () => {
             </div>
 
             {/* find out more button */}
-            <button className='p-2 px-8 text-sm font-semibold transition duration-200 ease-in-out border-2 border-white rounded-lg hover:text-white hover:bg-secondary hover:border-secondary'>View Now</button>
+            <button className='p-2 px-8 text-sm font-semibold transition duration-200 ease-in-out border-2 border-white rounded-lg hover:text-white hover:bg-secondary hover:border-secondary '>View Now</button>
           </div>
           
           {/* right side */}
@@ -93,9 +94,13 @@ const Home = () => {
       </section>
 
       {/* Featured products */}
-      <section className='px-40 py-5'>
+      <section className='flex flex-col w-full h-full gap-10 px-40 pt-20'>
 
-        <h1>Featured products</h1>
+        <h1 className='text-2xl font-bold'>Featured products</h1>
+
+        <div className='grid w-full h-full grid-cols-5 '>
+          <ProductCard/>
+        </div>
 
       </section>
 

@@ -31,12 +31,12 @@ const Navbar = () => {
 
     return (
         <div className='fixed top-0 left-0 z-10 w-full p-5 px-20 '>
-            <div className='relative flex flex-row items-center justify-between w-full p-3 px-20 rounded-lg bg-background bg-opacity-90' ref={dropdownRef}>
-                
+            <div className='relative flex flex-row items-center justify-between w-full p-3 px-20 rounded-lg bg-sky-200 bg-opacity-80' ref={dropdownRef}>
+
                 {/* logo button */}
                 <div className='flex flex-row items-center justify-center gap-4 cursor-pointer' onClick={() => handleNavigate("/")}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style={{fill: "#0ea5e9",transform: '',msFilter:''}}><path d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z"></path></svg>
-                    <h1 className='text-2xl font-bold'>Zofy</h1>
+                    <h1 className='text-2xl font-bold'>Deal<span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Dash</span></h1>
                 </div>
 
                 {/* page links */}

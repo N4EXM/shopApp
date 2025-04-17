@@ -11,6 +11,7 @@ export default {
         "accent": "#d4d4d8",
         "primary": "#38bdf8",
         "secondary": "#3b82f6",
+        "tertiary": "#2563eb",
         "text": "#27272a"
       },
       fontFamily: {
