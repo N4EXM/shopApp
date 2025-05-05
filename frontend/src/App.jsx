@@ -7,6 +7,7 @@ import Shop from './pages/Shop'
 import Discover from './pages/Discover'
 import Profile from './pages/profile'
 import React from 'react'
+import Notifications from './pages/Notifications'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
   }
 
   return (
-    <div className='relative flex flex-col w-screen h-full min-h-screen lg:py-16 text-anti-flash-white bg-rich-black font-poppins'>
+    <div className='relative flex flex-col w-screen h-full min-h-screen lg:py-16 text-anti-flash-white bg-rich-black font-poppins scrollbar_hidden'>
       <BrowserRouter>
         <Navbar
           isSignedIn={isSignedIn}
@@ -27,6 +28,7 @@ function App() {
           <Route path={'/Shop'} element={<Shop/>}></Route>
           <Route path={'/Discover'} element={<Discover/>}></Route>
           <Route path={'/Profile'} element={<Profile/>}></Route>
+          <Route path={'/Notifications'} element={<Notifications/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
