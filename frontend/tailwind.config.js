@@ -22,6 +22,8 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      fontSize: {
+        xxs: '0.6rem',},
       fontFamily: {
         "poppins": ["Poppins"]
       },
