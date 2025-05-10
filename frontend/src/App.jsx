@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div className='relative flex flex-col w-screen h-full min-h-screen lg:pt-16 text-anti-flash-white bg-rich-black font-poppins scrollbar_hidden'>
+    <div className='relative flex flex-col w-screen h-full min-h-screen pb-16 text-text/80 dark:text-darkText bg-background dark:bg-darkBackground font-poppins scrollbar_hidden'>
       <BrowserRouter>
         <Navbar
           isSignedIn={isSignedIn}

@@ -3,8 +3,12 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import HeroSection from '../components/homeComponents/HeroSection'
 import CategorySection from '../components/homeComponents/CategorySection'
 import S25Img from '../assets/S25Img.png'
-import TopDealsSection from '../components/homeComponents/TopDealsSection'
-import RecommendedDealsSection from '../components/homeComponents/RecommendedDealsSection'
+import CouchImg from '../assets/CouchImg.png'
+import techImg from '../assets/TechImg.png'
+import makeUpImg from '../assets/makeupImg.png'
+import laptopImg from '../assets/laptopImg.png'
+import clothesImg from '../assets/clothesImg.png'
+import ScrollableProducts from '../components/generalComponents/ScrollableProducts'
 
 const Home = () => {
 
@@ -60,50 +64,49 @@ const Home = () => {
     },
     {
       id: 1,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
-      stars: "5.0",
-      isWishlisted: false
+      image: CouchImg,
+      name: "Soft couch",
+      category: "Furniture",
+      price: "450.20",
+      stars: "4.0",
+      isWishlisted: true
     },
     {
       id: 2,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
+      image: techImg,
+      name: "Rasberry pi 5",
+      category: "Tech",
+      price: "80.50",
       stars: "5.0",
       isWishlisted: false
     },
     {
       id: 3,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
-      stars: "5.0",
+      image: makeUpImg,
+      name: "Moisturising Cream",
+      category: "Makeup",
+      price: "12.30",
+      stars: "4.0",
       isWishlisted: true
     },
     {
       id: 4,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
-      stars: "5.0",
+      image: laptopImg,
+      name: "Asus Vivobook",
+      category: "Laptop",
+      price: "235.70",
+      stars: "4.0",
       isWishlisted: true
     },
     {
       id: 5,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
+      image: clothesImg,
+      name: "Long sleeve shirt",
+      category: "Clothes",
+      price: "23.60",
       stars: "5.0",
       isWishlisted: true
     },
-    
   ])
   const [recommendedProducts, setRecommendedProducts] = useState([
     {
@@ -117,50 +120,49 @@ const Home = () => {
     },
     {
       id: 1,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
-      stars: "5.0",
-      isWishlisted: false
+      image: CouchImg,
+      name: "Soft couch",
+      category: "Furniture",
+      price: "450.20",
+      stars: "4.0",
+      isWishlisted: true
     },
     {
       id: 2,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
+      image: techImg,
+      name: "Rasberry pi 5",
+      category: "Tech",
+      price: "80.50",
       stars: "5.0",
       isWishlisted: false
     },
     {
       id: 3,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
-      stars: "5.0",
+      image: makeUpImg,
+      name: "Moisturising Cream",
+      category: "Makeup",
+      price: "12.30",
+      stars: "4.0",
       isWishlisted: true
     },
     {
       id: 4,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
-      stars: "5.0",
+      image: laptopImg,
+      name: "Asus Vivobook",
+      category: "Laptop",
+      price: "235.70",
+      stars: "4.0",
       isWishlisted: true
     },
     {
       id: 5,
-      image: S25Img,
-      name: "Samsung Galaxy S25",
-      category: "Smartphones",
-      price: "650.10",
+      image: clothesImg,
+      name: "Long sleeve shirt",
+      category: "Clothes",
+      price: "23.60",
       stars: "5.0",
       isWishlisted: true
     },
-    
   ])
 
   const handleNavigate = (url) => {
@@ -179,13 +181,23 @@ const Home = () => {
         handleNavigate={handleNavigate}
       />
 
-      <TopDealsSection
-        topDealsProducts={topDealsProducts}
+      <ScrollableProducts
+        products={topDealsProducts}
+        name={"Top deals"}
+        icon={
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style={{fill:'currentcolor'}}><path d="M13.707 3.293A.996.996 0 0 0 13 3H4a1 1 0 0 0-1 1v9c0 .266.105.52.293.707l8 8a.997.997 0 0 0 1.414 0l9-9a.999.999 0 0 0 0-1.414l-8-8zM12 19.586l-7-7V5h7.586l7 7L12 19.586z"></path><circle cx="8.496" cy="8.495" r="1.505"></circle></svg>
+        }
       />
 
-      <RecommendedDealsSection
-        recommendedProducts={recommendedProducts}
+      <ScrollableProducts
+        products={recommendedProducts}
+        name={"Recommended"}
+        icon={
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style={{fill: 'currentcolor'}}><path d="M4 21h1V8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2zM20 8h-7l1.122-3.368A2 2 0 0 0 12.225 2H12L7 7.438V21h11l3.912-8.596L22 12v-2a2 2 0 0 0-2-2z"></path></svg>
+        }
       />
+
+      
 
     </div>
   )

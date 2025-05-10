@@ -28,23 +28,30 @@ export default {
         "poppins": ["Poppins"]
       },
       colors: {
-        // Primary Colors
-        'rich-black': '#0D0F11',
-        'dark-green': '#022221',
-        'bangladesh-green': '#09624C',
-        'mountain-meadow': '#22C995',
-        'caribbean-green': '#00DEB1',
-        'anti-flash-white': '#F7F7F6',
-  
-        // Secondary Colors
-        'secondaryBackground': "#18181b",
-        'pine': '#063B28',
-        'basil': '#08453A',
-        'forest': '#095544',
-        'frog': '#17B790',
-        'mint': '#24A68C',
-        'stone': '#707D7D',
-        'pistachio': '#ACDEC4',
+        
+      // light
+      // "primary": "#6366f1",
+      // "secondary": "#4f46e5",
+      // "tertiary": "#4338ca",
+      // "text": "#09090b",
+      // "background": "#e0e7ff",
+      // "secondaryBackground": "#c7d2fe",
+
+      "primary": "#3b82f6",
+      "secondary": "#2563eb",
+      "tertiary": "#1d4ed8",
+      "text": "#09090b",
+      "background": "#e0e7ff",
+      "secondaryBackground": "#c7d2fe",
+
+      //
+      "darkPrimary": "#8b5cf6",
+      "darkSecondary": "#7c3aed",
+      "darkTertiary": "#6d28d9",
+      "darkText": "#f8fafc",
+      "darkBackground": "#0f172a",
+      "darkSecondaryBackground": "#020617"
+
       },
     },
   },
