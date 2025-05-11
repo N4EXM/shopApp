@@ -3,7 +3,7 @@ import ProductCard from './ProductCard'
 
 const ScrollableProducts = ({products, icon, name}) => {
   return (
-    <div className='flex flex-col w-full h-full gap-4 p-5 lg:px-20 md:px-10 lg:gap-10'> 
+    <div className='flex flex-col h-full min-w-full gap-4 p-5 lg:px-20 md:px-10 lg:gap-10'> 
 
       <div className='flex flex-row items-center w-full gap-1 lg:gap-3 text-primary dark:text-darkPrimary'>
         {icon}

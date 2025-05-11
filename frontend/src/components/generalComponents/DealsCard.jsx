@@ -23,7 +23,7 @@ const DealsCard = ({category, title, content, cardImage, path}) => {
             <button onClick={() => handleNavigate(path)} className='p-2 px-4 text-xs font-medium rounded-sm md:text-base md:p-3 md:px-6 w-fit text-rich-black bg-background text-text lg:text-lg'>Buy Now</button>
         </div>
 
-        <div className='flex items-center justify-center object-contain w-2/5 h-fit'>
+        <div className='flex items-center justify-center object-contain w-2/5 h-full'>
             <img className='w-full h-full drop-shadow-2xl' src={cardImage} alt="" />
         </div>
 

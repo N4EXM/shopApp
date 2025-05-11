@@ -8,12 +8,28 @@ const Discover = () => {
   const [dealsProducts, setDealsProducts] = useState([
     {
       id: 0,
-      category: "Headphones",
-      title: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      category: "Tech & Gadgets",
+      title: "Lorem ipsum dolor sit, amet.",
       content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita qui quos commodi laboriosam consequatur sunt explicabo consequuntur molestias aspernatur.",
-      cardImage: headphones[0].image,
+      cardImage: tech[4].image,
       path:''
-    }
+    },
+    {
+      id: 1,
+      category: "Clothes",
+      title: "Lorem ipsum dolor sit, amet.",
+      content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita qui quos commodi laboriosam consequatur sunt explicabo consequuntur molestias aspernatur.",
+      cardImage: clothes[0].image,
+      path:''
+    },
+    {
+      id: 2,
+      category: "Clothes",
+      title: "Lorem ipsum dolor sit, amet.",
+      content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita qui quos commodi laboriosam consequatur sunt explicabo consequuntur molestias aspernatur.",
+      cardImage: clothes[2].image,
+      path:''
+    },
   ])
 
   return (
@@ -25,7 +41,7 @@ const Discover = () => {
       </div>
 
       <DealsCarousel
-        
+        dealProducts={dealsProducts}
       />
 
       {/* <ScrollableProducts
