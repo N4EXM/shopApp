@@ -86,13 +86,13 @@
               <button className='relative flex flex-row items-center justify-start w-full gap-5 p-2 font-semibold duration-100 border-l-2 border-transparent hover:border-l-primary hover:dark:border-l-darkPrimary '>
                 <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: 'currentcolor'}}><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg></i>
                 Cart
-                <span className='absolute w-6 h-auto p-1 text-xs font-semibold rounded-full right-3 bg-primary text-darkText'>1</span>
+                <span className='absolute w-6 h-auto p-1 text-xs font-semibold rounded-full dark:bg-darkPrimary right-3 bg-primary text-darkText'>1</span>
               </button>
 
               <button className='relative flex flex-row items-center justify-start w-full gap-5 p-2 font-semibold duration-100 border-l-2 border-transparent hover:border-l-primary hover:dark:border-l-darkPrimary '>
                 <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: 'currentColor'}}><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg></i>
                 Wishlist
-                <span className='absolute w-6 h-auto p-1 text-xs font-semibold rounded-full right-3 bg-primary text-darkText'>1</span>
+                <span className='absolute w-6 h-auto p-1 text-xs font-semibold rounded-full dark:bg-darkPrimary right-3 bg-primary text-darkText'>1</span>
               </button>
 
               <div className='flex flex-col w-full gap-2'>

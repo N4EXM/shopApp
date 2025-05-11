@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroCard from '../homeComponents/HeroCard'
+import DealsCard from '../generalComponents/DealsCard'
 import S25Img from '../../assets/S25Img.png'
 
 
@@ -20,12 +20,12 @@ const HeroSection = ({handleNavigate}) => {
         </div>        
 
         <div className=''>
-            <HeroCard
+            <DealsCard
                 category={"Smartphones"}
                 title={'Get 25% on the bestseller'}
                 cardImage={S25Img}
                 content={'consectetur adipisicing elit. Inventore, tenetur porro? Fuga, illum ea. Quibusdam, impedit iusto fugit,'}
-                navigateFunction={() => handleNavigate('')}
+                path={""}
             />
             
         </div>

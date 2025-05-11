@@ -41,14 +41,14 @@ export default {
       "secondary": "#2563eb",
       "tertiary": "#1d4ed8",
       "text": "#09090b",
-      "background": "#e0e7ff",
-      "secondaryBackground": "#c7d2fe",
+      "background": "#f8fafc",
+      "secondaryBackground": "#e2e8f0",
 
       //
-      "darkPrimary": "#8b5cf6",
-      "darkSecondary": "#7c3aed",
-      "darkTertiary": "#6d28d9",
-      "darkText": "#f8fafc",
+      "darkPrimary": "#6366f1",
+      "darkSecondary": "#4f46e5",
+      "darkTertiary": "#4338ca",
+      "darkText": "#e2e8f0",
       "darkBackground": "#0f172a",
       "darkSecondaryBackground": "#020617"
 

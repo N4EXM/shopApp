@@ -7,7 +7,7 @@ const ScrollableProducts = ({products, icon, name}) => {
 
       <div className='flex flex-row items-center w-full gap-1 lg:gap-3 text-primary dark:text-darkPrimary'>
         {icon}
-        <h1 className='w-full font-bold md:text-xl lg:text-2xl'>{name}</h1>
+        <h1 className='w-full font-bold md:text-xl'>{name}</h1>
       </div>
 
       <div className='flex flex-row items-center w-full h-full gap-4 overflow-x-auto whitespace-nowrap snap-x snap-mandatory scrollbar_hidden'>

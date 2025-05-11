@@ -3,8 +3,8 @@ import React from 'react'
 const ProductCard = ({image, name, stars, category, price, isWishlisted}) => {
   return (
     <div className='relative flex flex-col items-start justify-start flex-shrink-0 w-56 h-56 gap-0 border rounded-md snap-start bg-secondaryBackground border-text/10 dark:border-darkText/20 dark:bg-darkSecondaryBackground md:w-64 md:h-64'>
-      <div className='flex items-center justify-center w-full h-32 p-3 rounded-md rounded-b-none md:h-36 bg-text/5 dark:bg-darkText/5'>
-        <img src={image} alt="" className='object-contain w-full h-full drop-shadow-xl'/>
+      <div className='flex items-center justify-center w-full p-3 bg-white rounded-md rounded-b-none min-h-32 md:min-h-36 dark:bg-darkText/5'>
+        <img src={image} alt="" className='object-contain w-full max-h-full drop-shadow-xl'/>
       </div>
       <div className='flex flex-col items-start justify-between w-full h-full p-3 md:p-4'>
         <div className='flex flex-row items-start justify-between w-full'>
