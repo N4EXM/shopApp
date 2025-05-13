@@ -1,15 +1,23 @@
 import React from 'react'
 
 const ProductCard = ({image, name, stars, category, price, isWishlisted}) => {
+
+  const truncateText = (str, length) => {
+    if (str.length > length) {
+        return str.substring(0, length) + '...';
+    }
+    return str
+  }
+
   return (
     <div className='relative flex flex-col items-start justify-start flex-shrink-0 w-56 h-56 gap-0 border rounded-md snap-start bg-secondaryBackground border-text/10 dark:border-darkText/20 dark:bg-darkSecondaryBackground md:w-64 md:h-64'>
-      <div className='flex items-center justify-center w-full p-3 bg-white rounded-md rounded-b-none min-h-32 md:min-h-36 dark:bg-darkText/5'>
+      <div className='flex items-center justify-center w-full p-3 bg-white rounded-md rounded-b-none min-h-32 md:min-h-36 '>
         <img src={image} alt="" className='object-contain w-full max-h-full drop-shadow-xl'/>
       </div>
       <div className='flex flex-col items-start justify-between w-full h-full p-3 md:p-4'>
         <div className='flex flex-row items-start justify-between w-full'>
           <div className='flex flex-col gap-0'>
-            <p className='text-xs font-medium md:text-sm'>{name}</p>
+            <p className='text-xs font-medium md:text-sm'>{truncateText(name, 20)}</p>
             <p className='text-xxs opacity-60 md:text-xs'>{category}</p>
           </div>
           <p className='flex items-center gap-2 text-xs font-medium md:text-sm w-fit h-fit'>{stars}<span className='flex items-center text-sm md:text-base text-amber-400'>&#9733;</span></p>
@@ -23,7 +31,7 @@ const ProductCard = ({image, name, stars, category, price, isWishlisted}) => {
           </div>
         </div>
       </div>
-      <button className='absolute right-3 top-3'>
+      <button className='absolute right-3 top-3 text-darkSecondaryBackground'>
         {isWishlisted ? 
           <svg className='md:size-6' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style={{fill:'#f43f5e'}}><path d="M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z"></path></svg>
         : 

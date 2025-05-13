@@ -24,8 +24,9 @@ const HeroSection = ({handleNavigate}) => {
                 category={"Smartphones"}
                 title={'Get 25% on the bestseller'}
                 cardImage={S25Img}
-                content={'consectetur adipisicing elit. Inventore, tenetur porro? Fuga, illum ea. Quibusdam, impedit iusto fugit,'}
+                content={'consectetur adipisicing elit. Inventore, tenetur porro? Fuga, illum ea Quibusdam, impedit iusto fugit,'}
                 path={""}
+                extraClasses={"lg:p-24 lg:px-20 2xl:pt-28"}
             />
             
         </div>

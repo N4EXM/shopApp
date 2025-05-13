@@ -9,7 +9,7 @@ const CategorySection = ({categoryButtons, handleNavigate}) => {
             <h1 className='w-full font-bold md:text-xl'>Categories</h1>
         </div>
         
-        <div className='grid items-center justify-between w-full h-full grid-cols-3 gap-3 p-3 border rounded-md lg:p-0 lg:flex lg:flex-row border-text/10 dark:border-darkText/10 lg:overflow-x-scroll scrollbar_hidden lg:border-none'>
+        <div className='grid items-center justify-between w-full h-full grid-cols-3 gap-3 p-3 border rounded-md lg:p-0 border-text/10 dark:border-darkText/10 lg:overflow-x-scroll scrollbar_hidden lg:border-none lg:grid lg:grid-cols-4 lg:grid-rows-2'>
 
             {categoryButtons.map((categoryButton) => (
                 <button onClick={() => handleNavigate(categoryButton.link)} key={categoryButton.id} className='flex flex-col items-center justify-center gap-1 p-2 rounded-md md:gap-2 md:py-5 md:flex-row min-w-fit bg-secondaryBackground dark:bg-darkSecondaryBackground lg:p-7 lg:flex-col lg:min-w-56'>
