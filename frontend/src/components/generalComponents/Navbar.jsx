@@ -35,7 +35,7 @@
     }, [isProfileBtnActive]);
 
     return (
-      <div className='fixed bottom-0 left-0 z-20 flex items-center justify-between w-full h-16 border-t-2 px-7 bg-secondaryBackground dark:bg-darkSecondaryBackground dark:border-darkSecondaryBackground/50 border-secondaryBackground/50 md:px-20 lg:px-32 lg:top-0 lg:border-b-2 lg:border-t-0'>
+      <div className='fixed bottom-0 left-0 z-20 flex items-center justify-between w-full h-16 border-t-[1px] px-7 bg-secondaryBackground dark:bg-darkSecondaryBackground dark:border-darkText/20 border-text/5 md:px-20 lg:px-32 lg:top-0 lg:border-b-[1px] lg:border-t-0'>
         
         <p onClick={() => handleNavigate("")} className='w-full text-3xl font-bold cursor-pointer lg:block sm:hidden'><span className='text-transparent bg-clip-text bg-gradient-to-tr from-primary to-secondary dark:from-darkPrimary dark:to-darkSecondary'>Deal</span>Dash</p>
 

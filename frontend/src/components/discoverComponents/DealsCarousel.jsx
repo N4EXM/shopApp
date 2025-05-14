@@ -43,15 +43,15 @@ const DealsCarousel = ({ dealProducts }) => {
       </div>
 
       {/* Pagination Dots */}
-      <div className="absolute bottom-0 flex gap-2 transform -translate-x-1/2 md:-bottom-1 left-1/2">
+      <div className="absolute flex gap-2 transform -translate-x-1/2 bottom-1 md:-bottom-1 left-1/2">
         {dealProducts.map((_, index) => (
           <button
             key={index}
             onClick={() => scrollToIndex(index)}
-            className={`w-2 h-2 md:w-8 md:h-2 transition-all duration-300 rounded-md ${
+            className={`w-1 h-1 md:w-6 md:h-2 lg:w-8 transition-all duration-300 rounded-md ${
               index === activeIndex 
-                ? 'bg-primary opacity-100' 
-                : 'bg-gray-400 opacity-50 hover:opacity-75'
+                ? 'bg-primary opacity-100 dark:bg-darkPrimary' 
+                : 'bg-text/60 dark:bg-darkText/60 opacity-50 hover:opacity-75'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
