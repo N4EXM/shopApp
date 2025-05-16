@@ -21,9 +21,9 @@ input[type="number"] {
 
 }
 /* Hide the spin buttons in WebKit browsers */
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
+} */
 

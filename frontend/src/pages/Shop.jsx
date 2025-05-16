@@ -1,13 +1,21 @@
 import React, { useState } from 'react'
-import ReactSlider from 'react-slider'
 
 const Shop = () => {
 
   const [isFilterActive, setIsFilterActive] = useState(false)
-  
+  const [minValue, setMinValue] = useState(0)
+  const [maxValue, setMaxValue] = useState(1000)
 
   const handleFilter = (state) => {
     setIsFilterActive(state)
+  }
+
+  const handleMinChange = (e) => {
+    setMinValue(e.target.value = e.target.value.replace(/\D/g, ''))
+  }
+
+  const handleMaxChange = (e) => {
+    setMaxValue(e.target.value = e.target.value.replace(/\D/g, ''))
   }
 
   return (
@@ -54,7 +62,10 @@ const Shop = () => {
 
         <div className='flex flex-col w-full gap-2'>
           <p className='text-sm'>Price:</p>
-          <ReactSlider />
+          <div className='flex flex-row items-center justify-between w-full gap-5'>
+            <input pattern="[0-9]*" defaultValue={minValue} onInput={(e) => handleMinChange(e)} type="number" inputMode='numeric' className='w-1/2 p-2 pl-3 text-sm bg-transparent border rounded outline-none bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/20 dark:border-darkText/20 appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none' placeholder='Min'/>
+            <input defaultValue={maxValue} type="number" onInput={(e) => handleMaxChange(e)} className='w-1/2 p-2 pl-3 text-sm bg-transparent border rounded outline-none bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/20 dark:border-darkText/20 appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none'  placeholder='Max'/>
+          </div>
         </div>
 
       </div>
