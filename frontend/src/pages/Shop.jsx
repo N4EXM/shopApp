@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import FilterMenu from '../components/shopComponents/FilterMenu'
+import ProductCard from '../components/generalComponents/ProductCard'
+import {clothes} from '../products'
 
 const Shop = () => {
 
-  const [isFilterMenuActive, setIsFilterMenuActive] = useState(true)
+  const [isFilterMenuActive, setIsFilterMenuActive] = useState(false)
   const [minValue, setMinValue] = useState(0)
   const [maxValue, setMaxValue] = useState(1000)
+  const [width, setWidth] = useState(window.innerWidth);
 
   const [isOneStarActive, setIsOneStarActive] = useState(false)
   const [isTwoStarActive, setIsTwoStarActive] = useState(false)
@@ -44,21 +47,35 @@ const Shop = () => {
   }
 
   useEffect(() => {
-    console.log("five stars: ",isFiveStarActive)
-    console.log("four stars: ", isFourStarActive)
-  }, [isFourStarActive, isFiveStarActive])
+    setWidth(window.innerWidth)
+    if (width >= 1080) {
+      setIsFilterMenuActive(true)
+      console.log("width changed")
+    }
+  }, [])
 
   return (
     <div className='relative flex flex-col items-start justify-start w-full h-full min-h-screen lg:pt-20'>
 
       <div className='flex flex-row items-center w-full h-full gap-2 p-5 pb-0 md:px-10 text-text dark:text-darkText lg:px-20'>
-        <i className='text-primary dark:text-darkPrimary'><svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" >
+        <i className='text-primary dark:text-darkPrimary'><svg className='size-6 md:size-8' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" >
         <path d="M10.5 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 1 0 0-3M17.5 18a1.5 1.5 0 1 0 0 3 1.5 1.5 0 1 0 0-3M8.82 15.77c.31.75 1.04 1.23 1.85 1.23h6.18c.79 0 1.51-.47 1.83-1.2l3.24-7.4c.14-.31.11-.67-.08-.95S21.34 7 21 7H7.33L5.92 3.62C5.76 3.25 5.4 3 5 3H2v2h2.33zM19.47 9l-2.62 6h-6.18l-2.5-6z"></path>
         </svg></i>
         <h1 className='text-lg font-bold md:text-2xl'>Shop</h1>
       </div>
+
+      <div>
+        <ProductCard
+          name={clothes[0].name}
+          category={clothes[0].category}
+          image={clothes[0].image}
+          price={clothes[0].price}
+          isWishlisted={clothes[0].isWishlisted}
+          stars={clothes[0].stars}
+        />
+      </div>
       
-      <button onClick={() => handleFilter(true)} className='fixed p-3 rounded-full z-5 bg-primary dark:bg-darkPrimary text-darkText bottom-20 right-5'>
+      <button onClick={() => handleFilter(true)} className={`fixed p-3 rounded-full z-5 bg-primary dark:bg-darkPrimary text-darkText bottom-20 right-5 ${width < 1080 ? "block" : "hidden"}`}>
         <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
         fill="currentColor" viewBox="0 0 24 24" >
         <path d="m20,2H4c-.55,0-1,.45-1,1v2c0,.24.09.48.25.66l6.75,7.72v7.62c0,.4.24.77.62.92.12.05.25.08.38.08.26,0,.52-.1.71-.29l2-2c.19-.19.29-.44.29-.71v-5.62l6.75-7.72c.16-.18.25-.42.25-.66v-2c0-.55-.45-1-1-1Z"></path>
@@ -71,9 +88,10 @@ const Shop = () => {
         isFourStarActive={isFourStarActive}
         isThreeStarActive={isThreeStarActive}
         isTwoStarActive={isTwoStarActive}
-        isOneStarActive={isOneStarActive}
+        isOneStarActive={isOneStarActive} 
         handleStarsActive={handleStarsActive}
         handleFilter={handleFilter}
+        width={width}
       />
 
     </div>

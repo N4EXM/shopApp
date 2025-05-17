@@ -1,10 +1,8 @@
 import React from 'react'
 
-const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, isFiveStarActive, isThreeStarActive, isTwoStarActive, isOneStarActive, handleStarsActive, handleFilter}) => {
+const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, isFiveStarActive, isThreeStarActive, isTwoStarActive, isOneStarActive, handleStarsActive, handleFilter, width}) => {
   return (
-    <div className={`fixed z-10 flex flex-col items-start w-full gap-5 p-5 border-t-[1px] 
-  bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/10
-    transition-all duration-300 ease-in-out ${isFilterMenuActive ? 'h-[70vh] bottom-0 overflow-y-auto' : 
+    <div className={`fixed lg:absolute lg:left-20 lg:top-40 lg:w-72 lg:pb-5 lg:border-t-0 lg:rounded-md z-10 flex flex-col items-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] lg:h-fit bottom-0 overflow-y-auto' : 
     'h-0 bottom-16 overflow-hidden translate-y-64'
     }`}>
         
@@ -16,7 +14,7 @@ const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, is
             </svg>
             <h1 className='text-lg font-bold'>Filter</h1>
           </div>
-          <button onClick={() => handleFilter(false)} className='flex p-1 rounded-full bg-text/5'>
+          <button onClick={() => handleFilter(false)} className={`${width < 1080 ? "block" : "hidden"} p-1 rounded-full bg-text/5`}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  
             fill="currentColor" viewBox="0 0 24 24" >
             <path d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z"></path>
