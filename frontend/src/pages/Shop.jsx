@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import FilterMenu from '../components/shopComponents/FilterMenu'
-import ProductCard from '../components/generalComponents/ProductCard'
+import ShopCard from '../components/shopComponents/shopCard'
 import {clothes} from '../products'
 
 const Shop = () => {
@@ -55,7 +55,7 @@ const Shop = () => {
   }, [])
 
   return (
-    <div className='relative flex flex-col items-start justify-start w-full h-full min-h-screen lg:pt-20'>
+    <div className='relative flex flex-col items-start justify-start w-full h-full min-h-screen gap-2 lg:pt-20'>
 
       <div className='flex flex-row items-center w-full h-full gap-2 p-5 pb-0 md:px-10 text-text dark:text-darkText lg:px-20'>
         <i className='text-primary dark:text-darkPrimary'><svg className='size-6 md:size-8' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" >
@@ -64,14 +64,9 @@ const Shop = () => {
         <h1 className='text-lg font-bold md:text-2xl'>Shop</h1>
       </div>
 
-      <div>
-        <ProductCard
-          name={clothes[0].name}
-          category={clothes[0].category}
-          image={clothes[0].image}
-          price={clothes[0].price}
-          isWishlisted={clothes[0].isWishlisted}
-          stars={clothes[0].stars}
+      <div className='flex flex-row flex-wrap w-full gap-2 p-5'>
+        <ShopCard
+        
         />
       </div>
       
