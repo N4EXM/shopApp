@@ -2,10 +2,8 @@ import React from 'react'
 
 const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, isFiveStarActive, isThreeStarActive, isTwoStarActive, isOneStarActive, handleStarsActive, handleFilter, width}) => {
   return (
-    <div className={`fixed lg:absolute lg:left-20 lg:top-40 lg:w-72 lg:pb-5 lg:border-t-0 lg:rounded-md z-10 flex flex-col items-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] lg:h-fit bottom-0 overflow-y-auto' : 
-    'h-0 bottom-16 overflow-hidden translate-y-64'
-    }`}>
-        
+    <div className={`lg:w-72 lg:pb-5 lg:border-t-0 z-10 fixed lg:static lg:rounded-md flex flex-col items-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] lg:h-fit bottom-0 overflow-y-auto translate-y-0' : 'h-0 bottom-16 overflow-hidden translate-y-64' }`}>
+      
         <div className='flex flex-row items-center justify-between w-full'>
           <div className='flex flex-row items-center w-full gap-2'>
             <svg className='text-primary dark:text-darkPrimary' xmlns="http://www.w3.org/2000/svg" width="24" height="24"  

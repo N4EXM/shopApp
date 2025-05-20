@@ -48,7 +48,7 @@ const DealsCarousel = ({ dealProducts }) => {
           <button
             key={index}
             onClick={() => scrollToIndex(index)}
-            className={`w-1 h-1 md:w-6 md:h-2 lg:w-8 transition-all duration-300 rounded-md ${
+            className={`w-1 h-1 md:w-6 md:h-1 lg:w-8 transition-all duration-300 rounded-md ${
               index === activeIndex 
                 ? 'bg-primary opacity-100 dark:bg-darkPrimary' 
                 : 'bg-text/60 dark:bg-darkText/60 opacity-50 hover:opacity-75'

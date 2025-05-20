@@ -34,7 +34,8 @@ const smartphones = [
         image: S25Img,
         price:"650.00",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
     {
         id:1,
@@ -43,7 +44,8 @@ const smartphones = [
         image: Iphone16Img,
         price:"800.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:2,
@@ -52,7 +54,8 @@ const smartphones = [
         image:S25UltraImg,
         price:"1100.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:3,
@@ -61,7 +64,8 @@ const smartphones = [
         image: Redminote13Img,
         price:"209.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:4,
@@ -70,7 +74,8 @@ const smartphones = [
         image: GalaxyA05sImg,
         price:"800.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:5,
@@ -79,7 +84,8 @@ const smartphones = [
         image: Oneplus13Img,
         price:"1100.00",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
 ]
 
@@ -91,7 +97,8 @@ const clothes = [
         image: clothesImg,
         price:"30.20",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
     {
         id:1,
@@ -100,7 +107,8 @@ const clothes = [
         image: jackJonesShirt,
         price:"20.50",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:2,
@@ -109,7 +117,8 @@ const clothes = [
         image: jackJonesJacket,
         price:"40.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:3,
@@ -118,7 +127,8 @@ const clothes = [
         image: OgloveGloves,
         price:"8.80",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:4,
@@ -127,7 +137,8 @@ const clothes = [
         image: GenericJacket,
         price:"30.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:5,
@@ -136,7 +147,8 @@ const clothes = [
         image: ShoesImg,
         price:"22.00",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
 ]
 
@@ -148,7 +160,8 @@ const tech = [
         image: MultiCable,
         price:"1.20",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
     {
         id:1,
@@ -157,7 +170,8 @@ const tech = [
         image: DualPlugAdaptor,
         price:"6.50",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:2,
@@ -166,7 +180,8 @@ const tech = [
         image: KensingtonHybridDock,
         price:"20.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:3,
@@ -175,7 +190,8 @@ const tech = [
         image: SanDiskUltra,
         price:"12.80",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:4,
@@ -184,7 +200,8 @@ const tech = [
         image: SeendaFoldable,
         price:"20.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:5,
@@ -193,7 +210,8 @@ const tech = [
         image: USB_C_plug,
         price:"22.00",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
 ]
 
@@ -205,7 +223,8 @@ const headphones = [
         image: SonyCH7,
         price:"30.20",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
     {
         id:1,
@@ -214,7 +233,8 @@ const headphones = [
         image: JBL520,
         price:"40.50",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:2,
@@ -223,7 +243,8 @@ const headphones = [
         image: AnkerH3,
         price:"32.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:3,
@@ -232,7 +253,8 @@ const headphones = [
         image: BeatsStudio3,
         price:"33.80",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:4,
@@ -241,7 +263,8 @@ const headphones = [
         image: BoseQuietComfort,
         price:"50.00",
         isWishlisted: false,
-        stars: "4.5"
+        stars: "4.5",
+        reviewCount: 5000
     },
     {
         id:5,
@@ -250,7 +273,8 @@ const headphones = [
         image: Y01Wireless,
         price:"70.00",
         isWishlisted: true,
-        stars:"4.2"
+        stars:"4.2",
+        reviewCount: 5000
     },
 ]
 

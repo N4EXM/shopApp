@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductCard from './ProductCard'
+import ShopCard from '../shopComponents/shopCard'
 
 const ScrollableProducts = ({products, icon, name}) => {
   return (
@@ -12,7 +13,7 @@ const ScrollableProducts = ({products, icon, name}) => {
 
       <div className='flex flex-row items-center w-full h-full gap-4 overflow-x-auto lg:justify-start whitespace-nowrap snap-x snap-mandatory scrollbar_hidden lg:flex-wrap'>
         {products.map((product) => (
-          <ProductCard
+          <ShopCard
             key={product.id}
             image={product.image}
             name={product.name}
@@ -20,6 +21,7 @@ const ScrollableProducts = ({products, icon, name}) => {
             price={product.price}
             stars={product.stars}
             isWishlisted={product.isWishlisted}
+            reviewCount={product.reviewCount}
           />
         ))}
       </div>
