@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, isFiveStarActive, isThreeStarActive, isTwoStarActive, isOneStarActive, handleStarsActive, handleFilter, width}) => {
+const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, isFiveStarActive, isThreeStarActive, isTwoStarActive, isOneStarActive, handleStarsActive, handleFilter}) => {
   return (
-    <div className={`lg:w-72 lg:pb-5 lg:border-t-0 z-10 fixed lg:static lg:rounded-md flex flex-col items-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] lg:h-fit bottom-0 overflow-y-auto translate-y-0' : 'h-0 bottom-16 overflow-hidden translate-y-64' }`}>
+    <div className={`lg:max-w-80 lg:pb-5 lg:border-t-0 z-10 lg:h-full fixed lg:top-16 lg:left-0 lg:rounded-md flex flex-col items-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 overflow-y-auto transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] lg:h-fit bottom-0  translate-y-0' : 'h-0 bottom-16 overflow-hidden translate-y-64' }`}>
       
         <div className='flex flex-row items-center justify-between w-full'>
           <div className='flex flex-row items-center w-full gap-2'>
@@ -12,7 +12,7 @@ const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, is
             </svg>
             <h1 className='text-lg font-bold'>Filter</h1>
           </div>
-          <button onClick={() => handleFilter(false)} className={`${width < 1080 ? "block" : "hidden"} p-1 rounded-full bg-text/5`}>
+          <button onClick={() => handleFilter(false)} className={`lg:hidden p-1 rounded-full bg-text/5`}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  
             fill="currentColor" viewBox="0 0 24 24" >
             <path d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z"></path>
@@ -38,42 +38,42 @@ const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, is
           <p className='text-sm'>Rating:</p>
           <div className='flex flex-col items-start justify-start w-full gap-2'>
 
-            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground'>
+            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground lg:border-0 lg lg:p-0 lg:bg-secondaryBackground dark:lg:bg-darkSecondaryBackground'>
               <div className='flex flex-row items-center justify-start gap-2 '> 
                 <input defaultChecked={isFiveStarActive} onChange={() => handleStarsActive(5)} type="checkbox" className='bg-transparent border rounded-md size-5 border-text/60 accent-primary dark:accent-darkPrimary' />
-                <p className='text-2xl text-amber-400'>★★★★★</p>
+                <p className='text-2xl lg:text-xl text-amber-400'>★★★★★</p>
               </div>
               <p className='text-sm font-medium text-text/50 dark:text-darkText/50'>5.0</p>
             </div>
 
-            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground'>
+            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground lg:border-0 lg lg:p-0 lg:bg-secondaryBackground dark:lg:bg-darkSecondaryBackground'>
               <div className='flex flex-row items-center justify-start gap-2'> 
                 <input defaultChecked={isFourStarActive} onChange={() => handleStarsActive(4)} type="checkbox" className='bg-transparent border rounded-md size-5 border-text/60 accent-primary dark:accent-darkPrimary' />
-                <p className='text-2xl text-amber-400'>★★★★</p>
+                <p className='text-2xl lg:text-xl text-amber-400'>★★★★</p>
               </div>
               <p className='text-sm font-medium text-text/50 dark:text-darkText/50'>4.0</p>
             </div>
 
-            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground'>
+            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground lg:border-0 lg lg:p-0 lg:bg-secondaryBackground dark:lg:bg-darkSecondaryBackground'>
               <div className='flex flex-row items-center justify-start gap-2'> 
                 <input defaultChecked={isThreeStarActive} onChange={() => handleStarsActive(3)} type="checkbox" className='bg-transparent border rounded-md size-5 border-text/60 accent-primary dark:accent-darkPrimary' />
-                <p className='text-2xl text-amber-400'>★★★</p>
+                <p className='text-2xl lg:text-xl text-amber-400'>★★★</p>
               </div>
               <p className='text-sm font-medium text-text/50 dark:text-darkText/50'>3.0</p>
             </div>
 
-            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground'>
+            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground lg:border-0 lg lg:p-0 lg:bg-secondaryBackground dark:lg:bg-darkSecondaryBackground'>
               <div className='flex flex-row items-center justify-start gap-2'> 
                 <input defaultChecked={isTwoStarActive} onChange={() => handleStarsActive(2)} type="checkbox" className='bg-transparent border rounded-md size-5 border-text/60 accent-primary dark:accent-darkPrimary' />
-                <p className='text-2xl text-amber-400'>★★</p>
+                <p className='text-2xl lg:text-xl text-amber-400'>★★</p>
               </div>
               <p className='text-sm font-medium text-text/50 dark:text-darkText/50'>2.0</p>
             </div>
 
-            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground'>
+            <div className='flex flex-row items-center justify-between w-full h-full gap-2 p-2 px-4 border rounded border-text/20 dark:border-darkText/20 bg-background dark:bg-darkBackground lg:border-0 lg lg:p-0 lg:bg-secondaryBackground dark:lg:bg-darkSecondaryBackground'>
               <div className='flex flex-row items-center justify-start gap-2'> 
                 <input defaultChecked={isOneStarActive} onChange={() => handleStarsActive(1)} type="checkbox" className='bg-transparent border rounded-md size-5 border-text/60 accent-primary dark:accent-darkPrimary' />
-                <p className='text-2xl text-amber-400'>★</p>
+                <p className='text-2xl lg:text-xl text-amber-400'>★</p>
               </div>
               <p className='text-sm font-medium text-text/50 dark:text-darkText/50'>1.0</p>
             </div>

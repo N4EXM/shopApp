@@ -10,7 +10,7 @@ const ShopCard = ({image, name, stars, category, price, isWishlisted, reviewCoun
   }
 
   return (
-    <div className='relative flex flex-col border rounded-md shadow-md h-80 min-w-40 max-w-40 bg-secondaryBackground dark:bg-darkSecondaryBackground drop-shadow-md border-text/5 dark:border-darkText/10 '>
+    <div className='relative flex flex-col border rounded-md shadow h-80 min-w-40 max-w-40 bg-secondaryBackground dark:bg-darkSecondaryBackground drop-shadow-md border-text/5 dark:border-darkText/10 '>
       <div className='w-full p-3 rounded-t-md min-h-40 max-h-40 bg-background'>
         <img className='object-contain object-center w-full h-full' src={image} alt="" />
       </div>
@@ -29,7 +29,7 @@ const ShopCard = ({image, name, stars, category, price, isWishlisted, reviewCoun
           
         </div>
         <div className='flex flex-row items-center justify-between w-full h-fit'>
-          <h1 className='text-sm font-medium'>£{price}</h1>
+          <h1 className='text-sm font-medium'>£{price.toFixed(2)}</h1>
           <button className='p-1 duration-200 rounded w-fit h-fit bg-primary dark:bg-darkPrimary dark:active:bg-darkSecondary active:bg-secondary text-darkText '>
               <svg className='md:size-6' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill:'currentcolor'}}><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle><path d="M13 13h2v-2.99h2.99v-2H15V5.03h-2v2.98h-2.99v2H13V13z"></path><path d="M10 17h8a1 1 0 0 0 .93-.64L21.76 9h-2.14l-2.31 6h-6.64L6.18 4.23A2 2 0 0 0 4.33 3H2v2h2.33l4.75 11.38A1 1 0 0 0 10 17z"></path></svg>
             </button>

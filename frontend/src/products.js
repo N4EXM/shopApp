@@ -32,9 +32,9 @@ const smartphones = [
         name:"Samsung Galaxy S25",
         category: "Smartphones",
         image: S25Img,
-        price:"650.00",
+        price: 650.00,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
     {
@@ -42,9 +42,9 @@ const smartphones = [
         name:"Iphone 16+",
         category: "Smartphones",
         image: Iphone16Img,
-        price:"800.00",
+        price: 800.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -52,9 +52,9 @@ const smartphones = [
         name:"Samsung Galaxy S25 Ultra",
         category: "Smartphones",
         image:S25UltraImg,
-        price:"1100.00",
+        price: 1100.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -62,9 +62,9 @@ const smartphones = [
         name:"Redmi note 13",
         category: "Smartphones",
         image: Redminote13Img,
-        price:"209.00",
+        price: 209.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -72,9 +72,9 @@ const smartphones = [
         name:"Samsung Galaxy A05s",
         category: "Smartphones",
         image: GalaxyA05sImg,
-        price:"800.00",
+        price: 800.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -82,9 +82,9 @@ const smartphones = [
         name:"Oneplus 13",
         category: "Smartphones",
         image: Oneplus13Img,
-        price:"1100.00",
+        price: 1100.00,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
 ]
@@ -95,9 +95,9 @@ const clothes = [
         name:"Hisdern shirt",
         category: "Clothes",
         image: clothesImg,
-        price:"30.20",
+        price: 30.20,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
     {
@@ -105,9 +105,9 @@ const clothes = [
         name:"Jack&Jones shirt",
         category: "clothes",
         image: jackJonesShirt,
-        price:"20.50",
+        price: 20.50,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -115,9 +115,9 @@ const clothes = [
         name:"Jack&Jones Jacket",
         category: "clothes",
         image: jackJonesJacket,
-        price:"40.00",
+        price: 40.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -125,9 +125,9 @@ const clothes = [
         name:"OGloves gloves",
         category: "clothes",
         image: OgloveGloves,
-        price:"8.80",
+        price: 8.80,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -135,9 +135,9 @@ const clothes = [
         name:"Generic Jacket",
         category: "clothes",
         image: GenericJacket,
-        price:"30.00",
+        price: 30.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -145,9 +145,9 @@ const clothes = [
         name:"Generic shoes",
         category: "clothes",
         image: ShoesImg,
-        price:"22.00",
+        price: 22.00,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
 ]
@@ -158,9 +158,9 @@ const tech = [
         name:"4 in 1 charger",
         category: "Tech",
         image: MultiCable,
-        price:"1.20",
+        price: 1.20,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
     {
@@ -168,9 +168,9 @@ const tech = [
         name:"Dual plug Adaptor",
         category: "Tech",
         image: DualPlugAdaptor,
-        price:"6.50",
+        price: 6.50,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -178,9 +178,9 @@ const tech = [
         name:"Kensington Hybrid Dock",
         category: "Tech",
         image: KensingtonHybridDock,
-        price:"20.00",
+        price: 20.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 2.5,
         reviewCount: 5000
     },
     {
@@ -188,9 +188,9 @@ const tech = [
         name:"SanDisk Ultra Type C",
         category: "Tech",
         image: SanDiskUltra,
-        price:"12.80",
+        price: 12.80,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 1.5,
         reviewCount: 5000
     },
     {
@@ -198,9 +198,9 @@ const tech = [
         name:"Seenda Foldable Keyboard",
         category: "Tech",
         image: SeendaFoldable,
-        price:"20.00",
+        price: 20.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 3.5,
         reviewCount: 5000
     },
     {
@@ -208,9 +208,9 @@ const tech = [
         name:"USB C type C plug",
         category: "Tech",
         image: USB_C_plug,
-        price:"22.00",
+        price: 22.00,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
 ]
@@ -221,9 +221,9 @@ const headphones = [
         name:"Sony CH7",
         category: "Headphones",
         image: SonyCH7,
-        price:"30.20",
+        price: 30.20,
         isWishlisted: true,
-        stars:"4.2",
+        stars:5.0,
         reviewCount: 5000
     },
     {
@@ -231,9 +231,9 @@ const headphones = [
         name:"JBl 520 headphones",
         category: "Headphones",
         image: JBL520,
-        price:"40.50",
+        price: 40.50,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 3.5,
         reviewCount: 5000
     },
     {
@@ -241,9 +241,9 @@ const headphones = [
         name:"Anker H3",
         category: "Headphones",
         image: AnkerH3,
-        price:"32.00",
+        price:32.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 1.5,
         reviewCount: 5000
     },
     {
@@ -251,9 +251,9 @@ const headphones = [
         name:"Beats Studio 3",
         category: "Headphones",
         image: BeatsStudio3,
-        price:"33.80",
+        price: 33.80,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -261,9 +261,9 @@ const headphones = [
         name:"Bose Quiet Comfort",
         category: "Headphones",
         image: BoseQuietComfort,
-        price:"50.00",
+        price: 50.00,
         isWishlisted: false,
-        stars: "4.5",
+        stars: 4.5,
         reviewCount: 5000
     },
     {
@@ -271,9 +271,9 @@ const headphones = [
         name:"Y01 wireless headphones",
         category: "Headphones",
         image: Y01Wireless,
-        price:"70.00",
+        price: 70.00,
         isWishlisted: true,
-        stars:"4.2",
+        stars:4.2,
         reviewCount: 5000
     },
 ]
