@@ -146,7 +146,7 @@ const Shop = () => {
         />
 
       </div>
-      <div className='relative flex-row items-start justify-start hidden w-full h-full gap-5 pt-16 overflow-y-hidden pl-80 lg:flex'>
+      <div className='relative flex-row items-start justify-start hidden w-full h-full gap-5 pt-16 pl-80 lg:flex'>
         <FilterMenu
           isFilterMenuActive={isFilterMenuActive}
           isFiveStarActive={isFiveStarActive}

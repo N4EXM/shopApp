@@ -2,7 +2,7 @@ import React from 'react'
 
 const FilterMenu = ({isFilterMenuActive,minValue, maxValue, isFourStarActive, isFiveStarActive, isThreeStarActive, isTwoStarActive, isOneStarActive, handleStarsActive, handleFilter}) => {
   return (
-    <div className={`lg:max-w-80 lg:pb-5 lg:border-t-0 z-10 lg:h-full fixed lg:top-16 lg:left-0 lg:rounded-md flex flex-col items-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 overflow-y-auto transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] lg:h-fit bottom-0  translate-y-0' : 'h-0 bottom-16 overflow-hidden translate-y-64' }`}>
+    <div className={`lg:max-w-80 lg:pb-5 lg:border-t-0 z-10 lg:h-full fixed lg:left-0 lg:top-16 lg:rounded-md flex flex-col items-start justify-start w-full gap-5 p-5 border-t-[1px] bg-secondaryBackground dark:bg-darkSecondaryBackground border-text/10 dark:border-darkText/20 transition-all duration-300 ease-in-out pb-20 ${isFilterMenuActive ? 'h-[70vh] md:h-[60vh] overflow-y-auto bottom-0 translate-y-0' : 'h-0 bottom-16 overflow-hidden translate-y-64 lg:translate-y-0' }`}>
       
         <div className='flex flex-row items-center justify-between w-full'>
           <div className='flex flex-row items-center w-full gap-2'>
